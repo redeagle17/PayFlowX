@@ -1,0 +1,1 @@
+An asynchronous, idempotent payment orchestration system with pluggable providers, retries, and full auditability.
