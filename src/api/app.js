@@ -6,7 +6,7 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cors from "cors";
 
-// import paymentsRouter from './routes/payments.js';
+import paymentsRouter from "./routes/payments.js";
 // import dlqRouter from './routes/dlq.js';
 // import webHookRouter from './routes/webhook.js';
 
@@ -18,7 +18,7 @@ app.use(express.json({ limit: "50kb" }));
 app.use(morgan("combined"));
 
 // Routes
-// app.use('/payments', paymentsRouter);
+app.use("/payments", paymentsRouter);
 // app.use('/dlq', dlqRouter);
 // app.use('/webhook', webHookRouter);
 
