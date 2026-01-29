@@ -1,4 +1,4 @@
-import { simulateWebhook } from "../utils/webhookSimulator";
+import { simulateWebhook } from "../utils/webhookSimulator.js";
 
 export default class CashfreeMockProvider {
   constructor() {
@@ -21,7 +21,7 @@ export default class CashfreeMockProvider {
 
     // Provider decides final outcome internally (The below line of code is to replicate this service as a production provider)
     const success = Math.random() < 0.75;
-    
+
     const webhookPayload = {
       transactionId: transaction.transactionId,
       provider: this.name,

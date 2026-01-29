@@ -1,4 +1,4 @@
-import { simulateWebhook } from "../utils/webhookSimulator";
+import { simulateWebhook } from "../utils/webhookSimulator.js";
 
 export default class RazorpayMockProvider {
   constructor() {
