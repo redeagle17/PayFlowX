@@ -3,9 +3,24 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch src -e js --exec \"node ./src/api/server.js\""
+    "start": "node ./src/api/server.js",
+    "dev": "nodemon --watch src -e js --exec \"node ./src/api/server.js\"",
+    "worker": "node ./src/worker/providerWorker.js",
+    "dynamo-ui": "DYNAMO_ENDPOINT=http://localhost:4566 dynamodb-admin"
   },
-  "keywords": [],
+  "keywords": ["payments",
+    "serverless",
+    "aws",
+    "sqs",
+    "dynamodb",
+    "nodejs",
+    "fintech",
+    "microservices",
+    "orchestrator",
+    "distributed-systems",
+    "idempotency",
+    "retry-logic"
+  ],
   "author": "Ankur Singh",
   "description": "Serverless multi-provider payment orchestration engine with AWS SQS, DynamoDB, and pluggable provider adapters.",
   "dependencies": {
