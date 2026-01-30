@@ -1,10 +1,11 @@
 import RazorpayMockProvider from "./razorpayMockProvider.js";
 import CashfreeMockProvider from "./cashfreeMockProvider.js";
+import MockProvider from "./mockProvider.js";
 
 /* -----------------------------
    Provider Instances
 -------------------------------- */
-const providers = [new RazorpayMockProvider(), new CashfreeMockProvider()];
+const providers = [new RazorpayMockProvider(), new CashfreeMockProvider(), new MockProvider()];
 
 /* -----------------------------
    Health State (In-memory)
